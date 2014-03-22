@@ -2,22 +2,28 @@
 <html>
 	<head>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
-		<link rel="apple-touch-icon-precomposed" href="img/recycly-icon.png"/>
-		<link rel="icon" type="image/png" href="img/recycly-icon.png"/>
-		<link rel="stylesheet" href="style.css"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="translucent" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" />
+		<link rel="apple-touch-startup-image" href="http://recyc.ly/img/load.png?v2">
+		<link rel="apple-touch-icon-precomposed" href="http://recyc.ly/img/icon.png?v2"/>
+		<link rel="icon" type="image/png" href="http://recyc.ly/img/icon.png?v2"/>
+		<link rel="stylesheet" href="style.css?v3.37"/>
 		<script type="text/javascript"  src="jquery.js"></script>
 		<script type="text/javascript"  src="transit.js"></script>
+		<script type="text/javascript"  src="raphael.js"></script>
+		  <link rel="import" href="/info.html">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,800,700,400&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 		<script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhslyC48bgJtGR_TcbXJckWZhfFKZuX0I&sensor=true"></script>
 		<title>Recycly</title>
 	</head>
 	<body>
-		<div id="loadMessage"></div>
+		<div id="statusbar"> </div>
+		<div id="loadMessage" class="message"></div>
+		<div id="learnMore" class="message">Learn more</div>
+		<div id="info"></div>
 		<section id="load">
-			<img id="logo" src="img/logo.png"/>
-			
+			<img id="logo" src="http://recyc.ly/img/logo.png"/>
+			<div id="loader"></div>
 		</section>
 		<section id="maps">
 			<div id="map">
@@ -26,24 +32,39 @@
 			</div>
 			<div id="streetView">
 				 <div id="streetViewObject"></div>
-				<div id="streetViewMessage"></div>
+				<div id="streetViewMessage" class="message"></div>
 			</div>
 		</section>
+		<div id="arrow"></div>
 	</body>
 
 		<script type="text/javascript">
-		var userLatLng, userLat, userLng, target, targetLatLng, origin, destinations, heading, markerDistance, photographerLatLng, binLatLng, binMarker, streetViewObject, message, targetLat, targetLng, targetLatLng, locationCount, distanceCheck;
+		var userLatLng, userLat, userLng, target, targetLatLng, origin, destinations, heading, markerDistance, photographerLatLng, binLatLng, binMarker, streetViewObject, message, targetLat, targetLng, targetLatLng, locationCount, distanceCheck, geolocation, newUserLatLng, newUserLat, newUserLng;
+		var newUserLatLng = new google.maps.LatLng(0,0);
+		var newUserLat = 0;
+		var newUserLng = 0;
 		var sv = new google.maps.StreetViewService();
 		var markerMin = 20;
 		var $logo = $('#load #logo');
 		var $load = $('#load');
+		var $infoMessage = $('#info .message');
 		var $lw = $logo.width();
 		var $lh = $logo.height();
 		var $vw = window.innerWidth;
 		var $vh = window.innerHeight;
-		console.log($vw);
 		var $map = $('#mapObject');
 		var $streetView = $('#streetViewObject');
+		var stopLooking = new Boolean(false);
+		var paper = Raphael("arrow", 100, 20), pos = [0,0];
+		var $arrowUp = "M4 14L52 4L97 14";
+		var $arrowDown = "M4 4L52 14L97 4";
+ 		var $arrow = $('#arrow');
+ 		var infoShowing = new Boolean();
+ 		infoShowing = false;
+ 		var firstLoad = new Boolean(true);
+ 		var $learnMore = $('#learnMore');
+ 		var $loader = $('#load #loader');
+ 		var $arrowSvg = paper.path("").attr({stroke:"#000", "stroke-linecap":"round", "stroke-jointcap":"round", "stroke-width" : "4px"});
 		function writeAddressName(latLng) {
 	    var geocoder = new google.maps.Geocoder();
 	        geocoder.geocode({
@@ -55,14 +76,31 @@
 	        });
 	      }
 	    function init() {
-	    	console.log($vw)
-	    	var $left = $vw/2 - $lw/2;
-	    	var $top = $vh/2;
-	    	console.log($left, $top);
-	    	$load.css({y: $top + 70}).transition({y: $top, opacity:1}, 100);
+	    	var $top = window.innerHeight/2 - $('#logo').height()/2;
+	    	if (navigator.userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i)) {
+      		  $("html").addClass("ios7");
+      		  $load.css({y: $top + 70}).transition({y: $top - 20, opacity:1, delay: 800}, 100);
+    		}
+    		else {
+    			$load.css({y: $top + 70}).transition({y: $top, opacity:1, delay: 800}, 100);
+    		}
+
+    		$learnMore.css({y:-$learnMore.height()});
+	    	$arrow.css({opacity:0,y: 500});
+	    	$arrowSvg.animate({path:$arrowUp});
+	    	$infoMessage.css({y:window.innerHeight});
+	    	
 	    	$('body').addClass('loaded');
-	    	$('#map').css({y:$vh*2});
-	    	$('#streetView').css({y:$vh*2});
+	    	$('#map').css({y:$vh + $('#map').height(), opacity:1});
+	    	$('#streetView').css({y:$vh + $('#streetView').height(), opacity:1});
+	    	$('#streetViewMessage').css({y:$('#streetView').height()/2});
+	    	$('#mapMessage').css({y:$('#streetView').height()/2});
+	    	document.ontouchstart = function(e){ 
+    			e.preventDefault(); 
+			}
+			document.ontouchmove = function(e){ 
+   		 		e.preventDefault(); 
+			}
 	    	geolocateUser();
 	    }
 
@@ -70,54 +108,64 @@
 			if(navigator.geolocation) {
 				var positionOptions = {
 					enableHighAccuracy : true,
-					timeout : 10000,
-					maximumAge : 20000
+					timeout : 27000,
+					maximumAge : 30000
 				};
-				navigator.geolocation.watchPosition(geolocationSuccess, geolocationError, positionOptions);
+				lastUserLatLng = new google.maps.LatLng(0,0);
+				lastUserLat = 0;
+				lastUserLng = 0;
+				movementThresh = 0.1; 
+				setInterval( function() {
+					if(stopLooking == false) {
+						geolocation = navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError, positionOptions);
+					}
+				}, 1000);
+				
 			}
 			else {
-				$load.transition({y: 20}, 200);
 			  	$('#loadMessage').html("<h1>We can\'t find you</h1><span>Your browser or device doesn\'t appear to support location services</span>");
-			  	var $messageTop = $vh/2-$('#loadMessage').height;
-			  	$('#loadMessage').transition({y: $messageTop, opacity:1}, 200);
-			console.log("geolocateUser Error: " + positionError.message);
+			  	showLoadMessage();
 			}
 		}
 
 		function geolocationSuccess(position) {
-			userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-			// console.log(userLatLng);
-			if (userLatLng.d == (NaN || undefined)) {
-				userLat = userLatLng.k;
+			if(userLatLng == undefined) {
+				userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+				userLat = position.coords.latitude;
+				userLng = position.coords.longitude;
 			}
 			else {
-				userLat = userLatLng.d;
-			}
-			if (userLatLng.e == (NaN || undefined)) {
-				userLng = userLatLng.A;
-			}
-			else {
-				userLng = userLatLng.e;
+				newUserLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+				newUserLat = position.coords.latitude;
+				newUserLng = position.coords.longitude;
 			}
 			
-			writeAddressName(userLatLng);
-			getClosestTarget();
+			var movement = distanceBetweenPoints(userLat, userLng, newUserLat, newUserLng);
+			if(movement >= movementThresh) {
+				userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.	longitude);
+				userLat = position.coords.latitude;
+				userLng = position.coords.longitude;
+
+
+				if(firstLoad == false){
+					stopWatching = true;
+					$('#map').transition({y:$vh + $('#map').height(), opacity:0});
+	    			$('#streetView').transition({y:$vh + $('#streetView').height(), opacity:0});
+				}
+				firstLoad = false;
+				getClosestTarget();
+			}
 		}
 
 		function geolocationError(positionError) {
 			setTimeout(function() {
-			  	$('#loadMessage').html("<h1>We can\'t find you!</h1> <span>This service requires your location to help</span>");
-			  	var $messageTop = window.innerHeight/2-$('#loadMessage').height();
-			  	var $logoTop = $messageTop - $logo.height() - 20;
-			  	$load.transition({y: $logoTop}, 200);
-			  	$('#loadMessage').css({y: window.innerHeight}).transition({y: $messageTop, opacity:1}, 200);
-			  	console.log($messageTop);
-			  }, 300); 
-			console.log("Error: " + positionError.message);
+			  	$('#loadMessage').html("<h1>We can\'t find you!</h1> <span>This service requires you to share your location</span>");
+			  	showLoadMessage();
+			  }, 450);
 		}
 
 		
-		function getClosestTarget() {
+		function getClosestTarget() {		
 			var url = "https://data.cityofnewyork.us/api/views/sxx4-xhzg/rows.json";
 			var distances =[];
 			var targets =[];
@@ -127,9 +175,7 @@
 			    for (var i = 0; i < locationCount;i++) {
 					targetLat = json.data[i][12];
 			   		targetLng = json.data[i][13];
-
 			   		targets.push(targetLat + "," + targetLng);
-
 			   		var distance = distanceBetweenPoints(userLat,userLng,targetLat,targetLng);
 			   		distances.push("" + distance + "");
 				}
@@ -154,7 +200,6 @@
 		}
 
 		function calculateRoute(from, to) {
-
 			targetLatLng = new google.maps.LatLng(target);
 	        var directionsService = new google.maps.DirectionsService();
 	        var directionsRequest = {
@@ -172,76 +217,67 @@
 	                directions: response
 	              });
 	            }
-	            else
+	            else {
 	              console.log("Unable to retrieve your route");
+	          	}
 	        });
 
 	        var mapOptions = {
-					center : userLatLng,
-					mapTypeId : google.maps.MapTypeId.ROADMAP,
-		      		panControl: false,
-				    zoomControl: false,
-				    mapTypeControl: false,
-				    scaleControl: true,
-				    streetViewControl: false,
-				    zoom : 1
-				};
+				center : userLatLng,
+				mapTypeId : google.maps.MapTypeId.ROADMAP,
+	      		panControl: false,
+			    zoomControl: false,
+			    mapTypeControl: false,
+			    scaleControl: true,
+			    streetViewControl: false,
+			    zoom : 1
+			};
 		    var recyclingBin = to.split(',');
-	   	    binLatLng = new google.maps.LatLng(recyclingBin[0], recyclingBin[1]);	
-				console.log(binLatLng);
+	   	    binLatLng = new google.maps.LatLng(recyclingBin[0], recyclingBin[1]);
+	   	    binLat = recyclingBin[0];
+	   	    binLng = recyclingBin[1]
 			var binMapMarker = new google.maps.Marker({
 	   			position:binLatLng,
 	   			map: mapObject,
 	   			title: 'binMapMarker',
-	   			icon: 'img/marker.png',
+	   			icon: 'http://recyc.ly/img/marker.png',
 	   		});
-		    var mapObject = new google.maps.Map(document.getElementById("mapObject"), mapOptions);
-
-
-		   
-
-
-	   	   distanceCheck = distanceBetweenPoints(userLat,userLng,targetLat,targetLng);
-	   	   if(distanceCheck > 50000) {
+	   	  
+	   	   if(distanceCheck > 5000) {
 	   	   		tooFar();
 	   	   }
 	   	   else {
-	   		   sv.getPanoramaByLocation(binLatLng,50,processSVData);
+	   			var mapObject = new google.maps.Map(document.getElementById("mapObject"), mapOptions);
+	   			sv.getPanoramaByLocation(binLatLng,50,processSVData);
 	   		}
 	    }
 
+
 	    function tooFar() {
-	     	setTimeout(function() {
-			  	$('#loadMessage').html("<h1>We're sorry</h1> <span>This service is currently unavailable outside of New York City</span>");
-			  	var $messageTop = window.innerHeight/2-$('#loadMessage').height();
-			  	var $logoTop = $messageTop - $logo.height() - 20;
-			  	// $load.transition({y: $logoTop, delay:100}, 200);
-			  	$load.transition({y: $logoTop}, 200);
-			  	$('#loadMessage').css({y: window.innerHeight}).transition({y: $messageTop, opacity:1}, 200);
-			  	console.log($messageTop);
-			  }, 300); 
-			console.log("Error: " + navigator.geolocation.message);
-	    }
+		  	$('#loadMessage').html("<h1>Oops</h1><span>This service is currently unavailable outside of New York City</span>");
+		  	showLoadMessage();
+    	}
 
-	    function spoof() {
-	    	userLatLng = new google.maps.LatLng(40.578107,-73.990799);
-			userLat = userLatLng.k;
-			userLng = userLatLng.A;
-			$('body').removeClass('oops');
-			getClosestTarget();
-	    }
-
-	    function processSVData(data) {
-		    photographerLatLng = data.location.latLng;
-		    heading = google.maps.geometry.spherical.computeHeading(photographerLatLng, binLatLng);
-		    showStreetView(heading);
+	    function processSVData(data) {	
+	    	if(data != null) { 
+		    	photographerLatLng = data.location.latLng;
+		    	photographerLat = data.location.latLng.longitude;
+		    	photographerLng = data.location.latLng.latitude;
+		    	heading = google.maps.geometry.spherical.computeHeading(photographerLatLng, binLatLng);
+		    	google.maps.event.addListener(streetViewObject, 'loaded', showStreetView(heading));
+		    	showStreetView(heading);
+		    }
+		    else {
+		    	tooFar();
+		    }
+		    
 		}
 	    function showStreetView(heading) {
-	    var panoramaOptions = {
+	   		var panoramaOptions = {
 	      		position : photographerLatLng,
 	      		pov : {
 	      			heading:heading,
-	      			pitch:-15,
+	      			pitch:0,
 	      			zoom:1
 	      		},
 	      		addressControl: false,
@@ -253,16 +289,16 @@
 			    streetViewControl: false,
 			    linksControl: false
 	      	};
-	   		streetViewObject = new google.maps.StreetViewPanorama(document.getElementById("streetViewObject"), panoramaOptions);
+	      	streetViewObject = new google.maps.StreetViewPanorama(document.getElementById("streetViewObject"), panoramaOptions);
 
-	   		markerDistance = distanceBetweenPoints(photographerLatLng.k, photographerLatLng.A,binLatLng.k,binLatLng.A);
-	   		console.log(markerDistance);
-	   		if(markerDistance >= 30) {
-	   			addMarker();
-	   		}
-	   		else {
-	   			mapsLoaded();
-	   		}
+	   		markerDistance = distanceBetweenPoints(photographerLat, photographerLng, binLat,binLng);
+	   		mapsLoaded();
+	   		// if(markerDistance >= 30) {
+	   			// addMarker();
+	   		// }
+	   		// else {
+	   		// 	mapsLoaded();
+	   		// }
 		}
 
 		function addMarker(){
@@ -270,48 +306,79 @@
 			title: 'binMarker',
    			position:binLatLng,
    			map: streetViewObject,
-   			icon: 'img/marker.png',
-
+   			icon: 'http://recyc.ly/img/marker.png',
    		});
-   		$('#streetViewMessage').html("<img src='img/follow.svg'/>").addClass('show');
 		google.maps.event.addListener(streetViewObject, 'pov_changed', showStreetViewMessage);
 		google.maps.event.addListener(streetViewObject, 'zoomend', showStreetViewMessage);
 	   	streetViewObject.setVisible(true);
+	   	setTimeout(function() {
+	  		// showStreetViewMessage();
+	  	}, 500);
+	  	
 	    mapsLoaded();
 		}
 
 		function mapsLoaded() {
 			setTimeout(function() {
 				$('body').addClass('mapsLoaded');
-				console.log($lw);
 				var $ratio = $lh/$lw;
-				var $newLh = window.innerHeight * .03;
+				var $newLh = window.innerHeight * .035;
 				var $scale = $newLh/$lh;
-				$('#map').transition({y: 0}, 800);
-				$('#streetView').transition({y: .5, delay:300}, 800);
-				$load.transition({y: $logoTop}, 200);
-			  	$('#loadMessage').css({y: window.innerHeight}).transition({y: $messageTop, opacity:1}, 200);
-				// $logo.transition({scale: $scale, y: -$newLh, delay: 600}, 100);
-			}, 600);
+				var $logoTop = .0175*$vh;
+
+				$('#map').transition({y: 0, opacity:1});
+				$('#streetView').transition({y: 0, opacity:1, delay:200});
+				$load.transition({y: 0, opacity:0}, 300);
+				// $load.transition({y: $logoTop}, 200);
+				// $logo.transition({scale: $scale, y: -$newLh/$scale, delay:100}, 400);
+			}, 1500);
 
 			console.log('Heading ' + heading);
 			console.log('User ' + userLatLng);
 			console.log('Bin ' + binLatLng);
 			console.log('Pano ' + photographerLatLng);
+			distanceCheck = distanceBetweenPoints(userLat,userLng,targetLat,targetLng)/1000;
+			console.log(distanceCheck);
 			setTimeout(function() {
-				if(distanceCheck > 1000) {
-					$('#mapMessage').html("Too far or not in the right direction? Keep moving and we'll find another location!").addClass('show');
+				if(distanceCheck > 20) {
+					$('#mapMessage').html("<h1>Is this bin out of your way?</h1><span>No problem, we can find on your route if you keep moving.</span><div id='one'>No thanks</div><div id='two'>Okay</div>").transition({y:0, opacity:1, delay:3000},190);
+					$('#mapMessage #one')[0].addEventListener('click', function() {
+						$('#mapMessage').transition({y:$('#map').height()/2});
+						stopLooking = true;
+					}, false);
+					$('#mapMessage #two')[0].addEventListener('click', function() {
+						$('#mapMessage').transition({y:$('#map').height()/2});
+						stopLooking = false;
+					}, false);
 				}
-				if(markerDistance >= 20) {
-					showStreetViewMessage();
-				}
-			}, 1000);
+			}, 2000);
+			setTimeout(function() {
+				if(markerDistance >= 30) {
+	   				$('#streetViewMessage').html("<h1>Oops, this bin is out of sight</h1><span>Just head towards the icon to find it</span>").transition({y:0, opacity:1}, 190);
+	   			}
+	   			else {
+	   				// $('#streetViewMessage').html("<h1>Oops, this bin is out of sight</h1><span>Just head towards the icon to find it</span>").transition({y:0, opacity:1}, 190);
+	   			}
+	   		}, 2200);
+	   		setTimeout(function() {
+	   			$arrow.transition({opacity:.2,y:0}, 300);
+	   			$arrow[0].addEventListener('click', toggleInfo, false);
+	   			// $arrow[0].addEventListener('touchstart', toggleInfo, false);
+	   			$arrow[0].addEventListener('touchmove', function() {
+	   			 	$arrow.transition({opacity:.3,y:-5}, 300);
+	   			 });
+	   			 $arrow[0].addEventListener('touchleave', function() {
+	   			 $arrow.transition({opacity:2,y:0}, 100);
+	   			 });
+	   		}, 2000);
+			
 		}
 
 		function showStreetViewMessage() {
+
 			var $binMarker = $("div[title='binMarker']");
-			var $binMarkerTop = Math.round($("div[title='binMarker']").position().top);
-			var $binMarkerLeft = Math.round($("div[title='binMarker']").position().left);
+			var $binMarkerTop = Math.round($("div[title='binMarker']").offset().top);
+			var $binMarkerLeft = Math.round($("div[title='binMarker']").offset().left);
 			var $binMarkerWidth = $("div[title='binMarker']").innerWidth();
 			var $binMarkerHeight = $("div[title='binMarker']").innerHeight();
 			var $streetViewMessageWidth = $('#streetViewMessage').width();
@@ -328,6 +395,48 @@
 			
 		}
 		
+		function showLoadMessage() {
+			$loader.transition({opacity:0});
+			stopLooking = true;
+		  	var $messageTop = window.innerHeight/2 - $('#loadMessage').innerHeight()/2;
+		  	var $logoTop = $messageTop - $logo.height() - 20;
+		  	setTimeout(function() {
+		  		$load.transition({y: $logoTop}, 200);
+		  		// $logo.transition({scale: .5}, 200);
+		  		$('#loadMessage').css({y: window.innerHeight}).transition({y: $messageTop, opacity:1}, 200);
+		  	}, 300); 
+
+		  	setTimeout(function() {
+		  		var $belowError = $messageTop - window.innerHeight + $('#loadMessage').outerHeight() + $learnMore.height();
+		  		$learnMore.transition({y:(window.innerHeight/-4), opacity:1}, 200);
+		  	}, 400); 
+		  	return
+		}
+		function toggleInfo() {
+			console.log(infoShowing);
+			if(infoShowing == false){
+				infoShowing = true;
+				$.get("info.html", function(data){
+   					$('#info').html(data);
+   					$('#info .message:eq(1)').transition({y:0, opacity:1}, 500);
+				});
+				
+				$arrowSvg.animate({path:$arrowDown}, 500);
+				$('#maps').transition({y: -1 * window.innerHeight + 20}, 500);
+				if ($('html').hasClass('ios7')) {
+					$arrow.transition({y: -1 * window.innerHeight + $arrow.height() + 20}, 500);
+				}
+				else {
+					$arrow.transition({y: -1 * window.innerHeight + $arrow.height()}, 500);
+				}
+			}
+			else {
+				infoShowing = false;
+				$arrowSvg.animate({path:$arrowUp}, 500);
+				$('#maps').transition({y: 0}, 500);
+				$arrow.transition({y: 0}, 500);
+			}
+		}
 		window.onload = init;
 		// window.resize = google.maps.event.trigger(map, "resize");
 		// window.resize = google.maps.event.trigger(streetView, "resize");

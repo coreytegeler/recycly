@@ -8,12 +8,17 @@ html {
 	font-family: 'Open Sans', sans-serif;
 }
 body {
-	height: 100%; 
+	height: 100%;
 	width:100%;
 	overflow: hidden;
 	margin:0; 
 	padding:0;
-	position:relative;}
+	position:relative;
+}
+.ios7
+{
+    padding-top: 15px;
+}
 #load {
 	position:absolute;
 	width:100%;
@@ -29,54 +34,62 @@ body {
 	margin:auto;
 	display:table;	
 }
-.loaded #load img#logo {
-
+#load #loader {
+	height:5px;
+	width:0;
+	left:15%;
+	background-color: rgb(47, 154, 71);
+	position:absolute;
+	opacity: 1;
+	margin:20px 0;
+	max-width: 70% !important;
 }
-
-.mapsLoaded #load img#logo {
-	
-
-
-}
-#loadMessage {
+.message {
 	font-family: 'Open Sans', sans-serif;
 	position: absolute;
 	opacity:0;
-	width: 90%;
-	left:5%;
 	background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255,1);
-	-webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow:    0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-	box-shadow:         0px 2px 2px 0px rgba(0, 0, 0, 0.15);
 	text-align: center;
-	padding: 20px 0 30px 0;
 	transform:translate3d(0,0,0);
 	-webkit-transform:translate3d(0,0,0);
 }
-#loadMessage h1{
+.message h1{
+	width:90%;
+	display:table;
 	font-weight: 300;
 	color:black;
-	font-size: 60px;
-	margin:0 0 10px 0;
+	margin:auto;
 	padding:0;
-	letter-spacing: -2px;
+	/*letter-spacing:1px;*/
 }
-#loadMessage span{
+.message span{
 	font-weight: 400;
 	color:#999;
-	font-size: 20px;
+	font-size: 4vw;
 	width: 80%;
 	display: table;
 	margin: auto;
+	padding-bottom:3px;
 }
-body.oops #loadMessage {
-	opacity:1;
-	
+.message div{
+	width:50%;
+	float:left;
+	text-align: center;
+	border-top: 1px solid rgba(0,0,0,.1);
+	padding:10px 0;
+	color:rgba(0,0,0,.5);
+	font-size: 4.5vw;
+	margin-top:3px;
+	transition: all .6s ease-in-out;
+	-webkit-transition: all .6s ease-in-out;
 }
-
-body.mapsLoaded #loadMessage {
-	display:none;
+.message div:hover{
+	color: rgba(0,0,0,.8);
+}
+.message #one{
+	width:calc(50% - 2px);
+	width:-webkit-calc(50% - 2px);
+	border-right: 1px solid rgba(0,0,0,.1);
 }
 header {
 	position:fixed;
@@ -102,6 +115,30 @@ header img {
 	padding:10px 20px;
 	vertical-align: middle;
 }
+#loadMessage {
+	width: 90%;
+	left:5%;
+	padding: 20px 0 30px 0;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+#loadMessage h1 {
+	font-size: 10vw;
+	margin:0 auto 10px auto;
+}
+#learnMore {
+	position:fixed;
+	width: 100%;
+	color: rgba(0,0,0,.4);
+	bottom:0;
+	text-align: center;
+	opacity: 1;
+	background-color: transparent;
+	font-size: 5vw;
+	font-weight: 100;
+	opacity:0;
+}
 #maps {
 	height: 100%; 
 	width:100%; 
@@ -110,14 +147,30 @@ header img {
 	top:0;
 	left:0;
 }
+#maps .message {
+	bottom: 0;
+	width: 100%;
+	/*opacity: 1;*/
+	background-color: rgba(255,255,255,.95);
+	/*-webkit-box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow:    0px -2px 2px 0px rgba(0, 0, 0, 0.08);
+	box-shadow:         0px -2px 2px 0px rgba(0, 0, 0, 0.08);*/
+}
+#maps .message h1{
+	font-size:5vw;
+}
+#maps .message{
+
+}
 body.mapsLoaded #maps{
 	opacity:1;
 }
 #map {
 	overflow:hidden;
-	-webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow:    0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-	box-shadow:         0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:         0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(255,255,255, 0.05);
 	opacity:0;
 }
 #mapObject {
@@ -125,68 +178,82 @@ body.mapsLoaded #maps{
 	height: -webkit-calc(100% + 25px);
 	height: calc(100% + 25px);
 }
-#mapMessage {
-	bottom:0px;
-	border-top:rgba(47,154,70,0.6) solid 2px;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-}
 
 #streetView {
 	overflow:hidden;
 	opacity:0;
-	-webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow:    0px 2px 2px 0px rgba(0, 0, 0, 0.15);
-	box-shadow:         0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:         0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(255,255,255, 0.05);
+	opacity:0;
 }
 #streetViewObject {
 	width:100%;
 	height:-webkit-calc(100% + 25px);
 	height:calc(100% + 25px);
-	position: relative;
 }
+#arrow {
+	position:fixed !important;
+	bottom:0 !important;
+	left:0;
+	width:100%;
+	height:auto;
+}
+#arrow svg {
+	display: block;
+	margin:auto;
+	padding:2px 0;
+}
+.ios7 #arrow svg {
 
-
-#streetViewMessage {
-	position:absolute;
+}
+#info {
+	width:100vw;
+	height:100vh;
+	position: absolute;
+}
+#info .message {
+	position:relative;
+	width: 90%;
+	margin:auto;
+	display:table;
+	padding: 20px 0 30px 0;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	top: 200;
+	height: 30%;
 	opacity:0;
-	-webkit-transform: translateY(10px);
-	z-index:99999;
+	margin-top:3%;
 }
+#info .message h1 {
+	font-size: 10vw;
+	margin:0 auto 10px auto;
+}
+
+
 div[title="binMarker"] {
 	-webkit-transform: scale(1) !important;
 }
 div[title="binMarker"] img{
 	}
-#streetViewMessage.appear {
-	opacity:1;
-	-webkit-transform: translateY(0);
-	-webkit-transition: -webkit-transform .2s ease-in-out, opacity .2s ease-in-out;
-}
 
 
-@media (orientation:portrait) {
+/*@media (orientation:portrait) {*/
 	#map {
-		width:96%; 
-		height:46%;
-		margin:2%;
-		margin-top:7%;
-
+		width:92%; 
+		height:44%;
+		margin:4%;
 	}
 	#streetView {
-		width:96%; 
-		height:46%;
-		margin:2%;
+		width:92%; 
+		height:44%;
+		margin:4%;
 	}
-	body.mapsLoaded #map {
-		opacity:1;
-	} 
-	body.mapsLoaded #streetView {
-		opacity:1;
-	}
-}
+/*}*/
 
-@media (orientation:landscape) {
+/*@media (orientation:landscape) {
 	#map {
 		width:46%; 
 		height:96%;
@@ -201,7 +268,7 @@ div[title="binMarker"] img{
 	}
 	body.mapsLoaded #map {
 		-webkit-transform: translateX(0);
-		opacity:1;
+		opacity:1;r
 	} 
 	body.mapsLoaded #streetView {
 		-webkit-transform: translateX(0);
@@ -210,5 +277,5 @@ div[title="binMarker"] img{
 
 	#streetViewMessage {
 		
-	}
+	}*/
 }
