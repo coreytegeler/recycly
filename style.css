@@ -14,21 +14,30 @@ body {
 	margin:0; 
 	padding:0;
 	position:relative;
+	background-color: rgb(242,242,242);
 }
-.ios7
-{
-    padding-top: 15px;
+body.ios7 {
+	padding-top:0px;
 }
 #load {
 	position:absolute;
 	width:100%;
-	opacity:0;
+	height:100%;
+	top:0;
+	left:0;
 	transform-style: preserve-3d;
 	transform-origin: center center 0;
 /*	transform: translate3d(0,100%,0);
 	-webkit-transform: translate3d(0,100%,0);*/
 }
 #load #logo {
+	width:100%;
+	opacity:0;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#load #logo img{
 	width:70%;
 	height:auto;
 	margin:auto;
@@ -59,7 +68,7 @@ body {
 	font-weight: 300;
 	color:black;
 	margin:auto;
-	padding:0;
+	margin-top:2px;
 	/*letter-spacing:1px;*/
 }
 .message span{
@@ -69,14 +78,18 @@ body {
 	width: 80%;
 	display: table;
 	margin: auto;
-	padding-bottom:3px;
+	padding:3px 0 4px 0;
+	line-height: 4.7vw;
+}
+.message span a{
+	color:#999;
 }
 .message div{
 	width:50%;
 	float:left;
 	text-align: center;
 	border-top: 1px solid rgba(0,0,0,.1);
-	padding:10px 0;
+	padding:10px 0 30px 0;
 	color:rgba(0,0,0,.5);
 	font-size: 4.5vw;
 	margin-top:3px;
@@ -86,10 +99,13 @@ body {
 .message div:hover{
 	color: rgba(0,0,0,.8);
 }
-.message #one{
+.message .one{
 	width:calc(50% - 2px);
 	width:-webkit-calc(50% - 2px);
 	border-right: 1px solid rgba(0,0,0,.1);
+}
+.message .full{
+	width:calc(100%);
 }
 header {
 	position:fixed;
@@ -118,6 +134,7 @@ header img {
 #loadMessage {
 	width: 90%;
 	left:5%;
+	bottom:0;
 	padding: 20px 0 30px 0;
 	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.2);
@@ -142,10 +159,10 @@ header img {
 #maps {
 	height: 100%; 
 	width:100%; 
-	opacity:0;
 	position: absolute;
 	top:0;
 	left:0;
+	opacity:0;
 }
 #maps .message {
 	bottom: 0;
@@ -171,14 +188,18 @@ body.mapsLoaded #maps{
 	-moz-box-shadow:    0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 	box-shadow:         0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 	border: 1px solid rgba(255,255,255, 0.05);
-	opacity:0;
+	width:92%; 
+	height:45%;
+	margin:4%;
+}
+.ios7 #map {
+	height:44%;
 }
 #mapObject {
 	width:100%;
 	height: -webkit-calc(100% + 25px);
 	height: calc(100% + 25px);
 }
-
 #streetView {
 	overflow:hidden;
 	opacity:0;
@@ -186,7 +207,12 @@ body.mapsLoaded #maps{
 	-moz-box-shadow:    0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 	box-shadow:         0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 	border: 1px solid rgba(255,255,255, 0.05);
-	opacity:0;
+	width:92%; 
+	height:45%;
+	margin:4%;
+}
+.ios7 #streetView {
+	height:44%;
 }
 #streetViewObject {
 	width:100%;
@@ -199,19 +225,20 @@ body.mapsLoaded #maps{
 	left:0;
 	width:100%;
 	height:auto;
+	padding: 10px 0;
 }
 #arrow svg {
 	display: block;
 	margin:auto;
-	padding:2px 0;
 }
-.ios7 #arrow svg {
-
+.ios7 #arrow {
+	
 }
 #info {
-	width:100vw;
-	height:100vh;
-	position: absolute;
+	width:100%;
+	height:100%;
+	position: fixed;
+	top:100%;
 }
 #info .message {
 	position:relative;
@@ -226,56 +253,25 @@ body.mapsLoaded #maps{
 	height: 30%;
 	opacity:0;
 	margin-top:3%;
+	z-index:10;
 }
 #info .message h1 {
 	font-size: 10vw;
 	margin:0 auto 10px auto;
 }
-
+#info .logo {
+	margin-top:30px;
+}
+#info .logo img{
+	width:50%;
+	opacity:1;
+	margin:auto;
+	display:table;
+}
 
 div[title="binMarker"] {
 	-webkit-transform: scale(1) !important;
 }
 div[title="binMarker"] img{
-	}
-
-
-/*@media (orientation:portrait) {*/
-	#map {
-		width:92%; 
-		height:44%;
-		margin:4%;
-	}
-	#streetView {
-		width:92%; 
-		height:44%;
-		margin:4%;
-	}
-/*}*/
-
-/*@media (orientation:landscape) {
-	#map {
-		width:46%; 
-		height:96%;
-		margin:2%;
-		margin-top:7%;
-
-	}
-	#streetView {
-		width:46%; 
-		height:96%;
-		margin:2%;
-	}
-	body.mapsLoaded #map {
-		-webkit-transform: translateX(0);
-		opacity:1;r
-	} 
-	body.mapsLoaded #streetView {
-		-webkit-transform: translateX(0);
-		opacity:1;
-	}
-
-	#streetViewMessage {
-		
-	}*/
 }
+

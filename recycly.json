@@ -1,0 +1,2436 @@
+{
+  "bins" : [
+    {	
+    	"count" : 1,
+        "location": {
+            "latitude": "40.890848989",
+            "longitude": "-73.864223918"
+        },
+        "pov": {
+        	"latitude": "", 
+            "longitude": "",
+            "heading": "",
+            "pitch": "",
+            "zoom": ""
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+    	"count" : 2,
+        "location": {
+            "latitude": "40.8488907878",
+            "longitude": "-73.8771283938"
+        },
+        "pov": {
+        	"latitude": "40.851638",
+            "longitude": "-73.882637",
+            "heading": "74.83233610479297",
+            "pitch": "-2.2353595251563454",
+            "zoom": "2.8200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find this bin in the <a target='_blank' href='http://www.bronxzoo.com/'>Bronx Zoo</a>, along with more than 600 species from around the globe!"
+        }
+    },
+    {
+    	"count" : 3,
+        "location": {
+            "latitude": "40.85557",
+            "longitude": "-73.887564999999995"
+        },
+        "pov": {
+        	"latitude": "",
+            "longitude": "",
+            "heading": "",
+            "pitch": "",
+            "zoom": ""
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+    	"count" : 4,
+        "location": {
+            "latitude": "40.871864",
+            "longitude": "-73.805549"
+        },
+        "pov": {
+        	"latitude": "40.873822",
+            "longitude": "-73.806159",
+            "heading": "175.58598280792972",
+            "pitch": "-4.869814012660417",
+            "zoom": "1.32"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+    	"count" : 5,
+        "location": {
+            "latitude": "40.851889",
+            "longitude": "-73.868549"
+        },
+        "pov": {
+        	"latitude": "40.861387", 
+            "longitude": "-73.88087300000001",
+            "heading": "49.690279881115146",
+            "pitch": "-5.598544780810325",
+            "zoom": "2.6500000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 6,
+        "location": {
+            "latitude": "40.861525999999998",
+            "longitude": "-73.880658999999994"
+        },
+        "pov": {
+            "latitude": "40.861387", 
+            "longitude": "-73.88087300000001",
+            "heading": "49.690279881115146",
+            "pitch": "-5.598544780810325",
+            "zoom": "2.6500000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 7,
+        "location": {
+            "latitude": "40.860754999999997",
+            "longitude": "-73.880422999999993"
+        },
+        "pov": {
+            "latitude": "40.860902", 
+            "longitude": "-73.88054999999997",
+            "heading": "84.0917811859479",
+            "pitch": "-15.745511444321988",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 8,
+        "location": {
+            "latitude": "40.859644000000003",
+            "longitude": "-73.880471999999997"
+        },
+        "pov": {
+            "latitude": "40.859693", 
+            "longitude": "-73.88063199999999",
+            "heading": "123.61620688924171",
+            "pitch": "-7.900417099121853",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 9,
+        "location": {
+            "latitude": "40.862602000000003",
+            "longitude": "-73.880171000000004"
+        },
+        "pov": {
+            "latitude": "", 
+            "longitude": "",
+            "heading": "",
+            "pitch": "",
+            "zoom": ""
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 10,
+        "location": {
+            "latitude": "40.826939",
+            "longitude": "-73.922314"
+        },
+        "pov": {
+            "latitude": "40.826919", 
+            "longitude": "-73.92242699999997",
+            "heading": "58.25760778232649",
+            "pitch": "-13.538624096480842",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 11,
+        "location": {
+            "latitude": "40.826627",
+            "longitude": "-73.922447"
+        },
+        "pov": {
+            "latitude": "40.826713", 
+            "longitude": "-73.92252500000001",
+            "heading": "-211.88336356979727",
+            "pitch": "-26.051161131230245",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 12,
+        "location": {
+            "latitude": "40.854322",
+            "longitude": "-73.869764"
+        },
+        "pov": {
+            "latitude": "40.854336", 
+            "longitude": "-73.86940099999998",
+            "heading": "-461.71533324968226",
+            "pitch": "-4.281910733458387",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Why not take a walk in the park?"
+        }
+    },
+    {
+        "count" : 13,
+        "location": {
+            "latitude": "40.854445",
+            "longitude": "-73.869863"
+        },
+        "pov": {
+            "latitude": "40.854507", 
+            "longitude": "-73.869467",
+            "heading": "-104.4878589270768",
+            "pitch": "-13.361150864665653",
+            "zoom": "2.3200000000000003 "
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Too old for a little playground fun? Well, you can still recycle!"
+        }
+    },
+    {
+        "count" : 14,
+        "location": {
+            "latitude": "40.849760000000003",
+            "longitude": "-73.8771283938"
+        },
+        "pov": {
+            "latitude": "40.851638",
+            "longitude": "-73.882637",
+            "heading": "74.83233610479297",
+            "pitch": "-2.2353595251563454",
+            "zoom": "2.8200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find this bin in the <a target='_blank' href='http://www.bronxzoo.com/'>Bronx Zoo</a>, along with more than 600 species from around the globe!"
+        }
+    },
+    {
+        "count" : 15,
+        "location": {
+            "latitude": "40.850017000000001",
+            "longitude": "-73.880035000000007"
+        },
+        "pov": {
+            "latitude": "40.851638",
+            "longitude": "-73.882637",
+            "heading": "74.83233610479297",
+            "pitch": "-2.2353595251563454",
+            "zoom": "2.8200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "But you can find it in the <a target='_blank' href='http://www.bronxzoo.com/'>Bronx Zoo</a>, along with more than 600 species from around the globe!"
+        }
+    },
+    {
+        "count" : 16,
+        "location": {
+            "latitude": "40.819933",
+            "longitude": "-73.887069"
+        },
+        "pov": {
+            "latitude": "40.820508",
+            "longitude": "-73.88807300000002",
+            "heading": "486.43092880606946",
+            "pitch": "-20.769116521577196",
+            "zoom": "1.83"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 17,
+        "location": {
+            "latitude": "40.871706",
+            "longitude": "-73.872741"
+        },
+        "pov": {
+            "latitude": "40.870641",
+            "longitude": "-73.876343",
+            "heading": "493.4174498731401",
+            "pitch": "-21.38842864294233",
+            "zoom": "1.17"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can follow the route and find it on the Burke Bridge over the Bronx River"
+        }
+    },
+    {
+        "count" : 18,
+        "location": {
+            "latitude": "40.911295000000003",
+            "longitude": "-73.907651999999999"
+        },
+        "pov": {
+            "latitude": "40.912486",
+            "longitude": "-73.902658",
+            "heading": "296.40940771900284",
+            "pitch": "-13.33264021749855",
+            "zoom": "1.17"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find it in front of Alumnae Hall at the College of Mt. St. Vincent"
+        }
+    },
+    {
+        "count" : 19,
+        "location": {
+            "latitude": "40.911236000000002",
+            "longitude": "-73.907910000000001"
+        },
+        "pov": {
+            "latitude": "40.912486",
+            "longitude": "-73.902658",
+            "heading": "296.40940771900284",
+            "pitch": "-13.33264021749855",
+            "zoom": "1.17"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find it in front of Cardinal Spellman Hall at the College of Mt. St. Vincent"
+        }
+    },
+    {
+        "count" : 20,
+        "location": {
+            "latitude": "40.825217",
+            "longitude": "-73.88546"
+        },
+        "pov": {
+            "latitude": "40.825318",
+            "longitude": "-73.885979",
+            "heading": "103.57885252136063",
+            "pitch": "-3.2208792471629284",
+            "zoom": "2.16 "
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 21,
+        "location": {
+            "latitude": "40.840115",
+            "longitude": "-73.895513"
+        },
+        "pov": {
+            "latitude": "40.840408",
+            "longitude": "-73.89535699999999",
+            "heading": "121.38985072548566",
+            "pitch": "-8.445475662975468",
+            "zoom": "2.49"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Why not take a walk into Crotana Park to find it"
+        }
+    },
+    {
+        "count" : 22,
+        "location": {
+            "latitude": "40.835226",
+            "longitude": "-73.895652"
+        },
+        "pov": {
+            "latitude": "40.835167",
+            "longitude": "-73.895388",
+            "heading": "290.5257883956427",
+            "pitch": "-10.132700817265233",
+            "zoom": "1.5"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Why not take a walk into Crotana Park to find it"
+        }
+    },
+    {
+        "count" : 23,
+        "location": {
+            "latitude": "40.84133",
+            "longitude": "-73.892702"
+        },
+        "pov": {
+            "latitude": "40.841353",
+            "longitude": "-73.89261299999998",
+            "heading": "221.041724081087",
+            "pitch": "-21.605147573251053",
+            "zoom": "1.5"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 24,
+        "location": {
+            "latitude": "40.840876",
+            "longitude": "-73.898206"
+        },
+        "pov": {
+            "latitude": "40.84102",
+            "longitude": "-73.89805999999999",
+            "heading": "464.993563590446 ",
+            "pitch": "-8.61747200043691",
+            "zoom": "1.5"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Why not take a walk into Crotana Park to find it"
+        }
+    },
+    {
+        "count" : 25,
+        "location": {
+            "latitude": "40.838351",
+            "longitude": "-73.893566"
+        },
+        "pov": {
+            "latitude": "40.836585",
+            "longitude": "-73.89322400000003",
+            "heading": "357.8452401147294",
+            "pitch": "-20.522841275516534",
+            "zoom": "1.5"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Why not take a walk into Crotana Park to find it"
+        }
+    },
+    {
+        "count" : 26,
+        "location": {
+            "latitude": "40.841123",
+            "longitude": "-73.898056"
+        },
+        "pov": {
+            "latitude": "40.841095",
+            "longitude": "-73.89801799999998",
+            "heading": "139.60941386946493",
+            "pitch": "-9.921076448547833",
+            "zoom": "2.16"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Why not take a walk into Crotana Park to find it"
+        }
+    },
+    {
+        "count" : 27,
+        "location": {
+            "latitude": "40.833770000000001",
+            "longitude": "-73.877453000000003"
+        },
+        "pov": {
+            "latitude": "40.833785",
+            "longitude": "-73.87746199999998",
+            "heading": "522.1447397199807",
+            "pitch": "-12.179720364952859",
+            "zoom": "1.83"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 28,
+        "location": {
+            "latitude": "40.841444000000003",
+            "longitude": "-73.888486999999998"
+        },
+        "pov": {
+            "latitude": "40.841515",
+            "longitude": "-73.88846699999999",
+            "heading": "563.8178244079436",
+            "pitch": "-20.789861829408025",
+            "zoom": "1.83"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 110,
+        "location": {
+            "latitude": "40.57519",
+            "longitude": "-73.971342"
+        },
+        "pov": {
+            "latitude": "40.575934",
+            "longitude": "-73.97172899999998",
+            "heading": "535.5765604045306",
+            "pitch": "-16.14038543860223",
+            "zoom": "1.83"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Take a walk into Seaside Park to find it"
+        }
+    },
+    {
+        "count" : 111,
+        "location": {
+            "latitude": "40.575239",
+            "longitude": "-73.971889"
+        },
+        "pov": {
+            "latitude": "40.575934",
+            "longitude": "-73.97172899999998",
+            "heading": "535.5765604045306",
+            "pitch": "-16.14038543860223",
+            "zoom": "1.83"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Take a walk into Seaside Park to find it"
+        }
+    },
+    {
+        "count" : 112,
+        "location": {
+            "latitude": "40.629573000000001",
+            "longitude": "-74.022531999999998"
+        },
+        "pov": {
+            "latitude": "40.629725",
+            "longitude": "-74.02255000000002",
+            "heading": "511.65104804516585",
+            "pitch": "-13.135928654527653",
+            "zoom": "3.1500000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 113,
+        "location": {
+            "latitude": "40.596833",
+            "longitude": "-73.9994"
+        },
+        "pov": {
+            "latitude": "40.596723",
+            "longitude": "-73.99931100000003",
+            "heading": "661.1758292575332",
+            "pitch": "-2.644984369844724",
+            "zoom": "1.5"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Take a walk into Bensonhurst Park to find it"
+        }
+    },
+    {
+        "count" : 114,
+        "location": {
+            "latitude": "40.68463",
+            "longitude": "-73.990234"
+        },
+        "pov": {
+            "latitude": "40.684974",
+            "longitude": "-73.990116",
+            "heading": "909.2380926083092",
+            "pitch": "-10.9456296808303",
+            "zoom": "2.16"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Take a walk into Boerum Park to find it"
+        }
+    },
+    {
+        "count" : 115,
+        "location": {
+            "latitude": "40.696536",
+            "longitude": "-73.990675"
+        },
+        "pov": {
+            "latitude": "40.696341",
+            "longitude": "-73.990544",
+            "heading": "1067.8767199758486",
+            "pitch": "-5.054903448702319",
+            "zoom": "2.16"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "But you can find it in the Brooklyn War Memorial"
+        }
+    },
+    {
+        "count" : 116,
+        "location": {
+            "latitude": "40.673811",
+            "longitude": "-73.943717"
+        },
+        "pov": {
+            "latitude": "",
+            "longitude": "",
+            "heading": "1067.8767199758486",
+            "pitch": "-5.054903448702319",
+            "zoom": "2.16"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "But you can find it in the Brooklyn War Memorial"
+        }
+    },
+    {
+        "count" : 117,
+        "location": {
+            "latitude": "40.656762",
+            "longitude": "-73.90247"
+        },
+        "pov": {
+            "latitude": "40.656942",
+            "longitude": "-73.90270399999997",
+            "heading": "1291.8231456500894",
+            "pitch": "-5.543731194029977",
+            "zoom": "2.16"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "But you can find it inside the Brownsville Recreation Center"
+        }
+    },
+    {
+        "count" : 118,
+        "location": {
+            "latitude": "40.722315",
+            "longitude": "-73.961527"
+        },
+        "pov": {
+            "latitude": "40.721887",
+            "longitude": "-73.959991",
+            "heading": "1376.700966000066",
+            "pitch": "-8.364421513522524",
+            "zoom": "1.5"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "But you can find it in the Bushwick Inlet Park"
+        }
+    },
+    {
+        "count" : 119,
+        "location": {
+            "latitude": "40.695873",
+            "longitude": "-73.990218"
+        },
+        "pov": {
+            "latitude": "40.695889",
+            "longitude": "-73.99010299999998",
+            "heading": "1718.5495197823873",
+            "pitch": "-6.305514916740961",
+            "zoom": "2.8200000000000003"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 120,
+        "location": {
+            "latitude": "40.697327",
+            "longitude": "-73.990337"
+        },
+        "pov": {
+            "latitude": "40.697066",
+            "longitude": "-73.99132500000002",
+            "heading": "1523.998730776664",
+            "pitch": "-13.036361307266864",
+            "zoom": "1.83"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Just take a walk into Cadman Plaza to find it"
+        }
+    },
+    {
+        "count" : 121,
+        "location": {
+            "latitude": "40.681307",
+            "longitude": "-73.995212"
+        },
+        "pov": {
+            "latitude": "40.681355",
+            "longitude": "-73.995251",
+            "heading": "1617.9339142339325",
+            "pitch": "-7.640619706606865",
+            "zoom": "2.8200000000000003"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 122,
+        "location": {
+            "latitude": "40.680946",
+            "longitude": "-73.995481"
+        },
+        "pov": {
+            "latitude": "40.68076",
+            "longitude": "-73.995447",
+            "heading": "1816.077949420094",
+            "pitch": "-6.774189922884475",
+            "zoom": "3.8100000000000005"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 123,
+        "location": {
+            "latitude": "40.679442",
+            "longitude": "-73.876233"
+        },
+        "pov": {
+            "latitude": "40.679397",
+            "longitude": "-73.876397",
+            "heading": "1871.6739322744281",
+            "pitch": "-10.595001435242493",
+            "zoom": "1.83"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find it in City Line Park"
+        }
+    },
+    {
+        "count" : 124,
+        "location": {
+            "latitude": "40.688290000000002",
+            "longitude": "-73.996136000000007"
+        },
+        "pov": {
+            "latitude": "40.688441",
+            "longitude": "-73.99609900000002",
+            "heading": "2002.6096217479212",
+            "pitch": "-11.87041703620581",
+            "zoom": "2.49"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 125,
+        "location": {
+            "latitude": "40.694143",
+            "longitude": "-73.989791"
+        },
+        "pov": {
+            "latitude": "40.694104",
+            "longitude": "-73.99046699999997",
+            "heading": "2225.4306959362393",
+            "pitch": "-6.596342758889791",
+            "zoom": "2.16"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Check in front of the courthouse"
+        }
+    },
+    {
+        "count" : 126,
+        "location": {
+            "latitude": "40.697793",
+            "longitude": "-73.978653"
+        },
+        "pov": {
+            "latitude": "40.698111",
+            "longitude": "-73.978231",
+            "heading": "2371.876889939607",
+            "pitch": "-7.281310925416301",
+            "zoom": "1.5"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Care to talk a walk into Commodore Berry Park?"
+        }
+    },
+    {
+        "count" : 127,
+        "location": {
+            "latitude": "40.685861",
+            "longitude": "-73.972638"
+        },
+        "pov": {
+            "latitude": "40.68576",
+            "longitude": "-73.97305499999999",
+            "heading": "2484.7479661507514",
+            "pitch": "-13.158735842501887",
+            "zoom": "2.49"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 128,
+        "location": {
+            "latitude": "40.610033",
+            "longitude": "-73.96952"
+        },
+        "pov": {
+            "latitude": "40.609936",
+            "longitude": "-73.969192",
+            "heading": "2443.1270144388045",
+            "pitch": "-3.615920199659043",
+            "zoom": "1.5"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find it in near the restrooms of the playground"
+        }
+    },
+    {
+        "count" : 129,
+        "location": {
+            "latitude": "40.702573",
+            "longitude": "-73.989752"
+        },
+        "pov": {
+            "latitude": "40.70252",
+            "longitude": "-73.989815",
+            "heading": "2534.376636581842",
+            "pitch": "-33.93016461704795",
+            "zoom": "1"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 130,
+        "location": {
+            "latitude": "40.702631",
+            "longitude": "-73.990641"
+        },
+        "pov": {
+            "latitude": "40.702602",
+            "longitude": "-73.99069800000001",
+            "heading": "2571.3186487599132",
+            "pitch": "-20.65841308694548",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 131,
+        "location": {
+            "latitude": "40.702379999999998",
+            "longitude": "-73.986553000000001"
+        },
+        "pov": {
+            "latitude": "40.702422",
+            "longitude": "-73.986628",
+            "heading": "2287.2545668026864",
+            "pitch": "-15.983062515260336",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 132,
+        "location": {
+            "latitude": "40.650210000000001",
+            "longitude": "-73.958798000000002"
+        },
+        "pov": {
+            "latitude": "40.650252",
+            "longitude": "-73.958708",
+            "heading": "1381.003088438521",
+            "pitch": "-19.44328788064353",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 133,
+        "location": {
+            "latitude": "40.682929999999999",
+            "longitude": "-73.964596"
+        },
+        "pov": {
+            "latitude": "40.682973",
+            "longitude": "-73.964455",
+            "heading": "1676.6422494125482",
+            "pitch": "-14.706099425345714",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 134,
+        "location": {
+            "latitude": "40.687092999999997",
+            "longitude": "-73.976237999999995"
+        },
+        "pov": {
+            "latitude": "40.687019",
+            "longitude": "-73.97622100000001",
+            "heading": "1481.253597905367",
+            "pitch": "-31.316953360571304",
+            "zoom": "1"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 135,
+        "location": {
+            "latitude": "40.682555999999998",
+            "longitude": "-73.961974999999995"
+        },
+        "pov": {
+            "latitude": "40.682459",
+            "longitude": "-73.96199899999999",
+            "heading": "1488.6005366808774",
+            "pitch": "-19.07205540138763",
+            "zoom": "1"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 136,
+        "location": {
+            "latitude": "40.687072000000001",
+            "longitude": "-73.976557"
+        },
+        "pov": {
+            "latitude": "40.687122",
+            "longitude": "-73.97645799999998",
+            "heading": "1341.147873480815",
+            "pitch": "-1.2494123567959123",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 137,
+        "location": {
+            "latitude": "40.687072000000001",
+            "longitude": "-73.976557"
+        },
+        "pov": {
+            "latitude": "40.687122",
+            "longitude": "-73.97645799999998",
+            "heading": "1341.147873480815",
+            "pitch": "-1.2494123567959123",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 138,
+        "location": {
+            "latitude": "40.687207999999998",
+            "longitude": "-73.974620999999999"
+        },
+        "pov": {
+            "latitude": "40.687206",
+            "longitude": "-73.974617",
+            "heading": "1388.0938604205078",
+            "pitch": "-11.30499896205505",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 139,
+        "location": {
+            "latitude": "40.689818",
+            "longitude": "-73.9732"
+        },
+        "pov": {
+            "latitude": "40.68962",
+            "longitude": "-73.973117",
+            "heading": "1403.9207670877354",
+            "pitch": "-4.2732605497148635",
+            "zoom": "2.9800000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 140,
+        "location": {
+            "latitude": "40.613322",
+            "longitude": "-74.030067"
+        },
+        "pov": {
+            "latitude": "40.613126",
+            "longitude": "-74.03086300000001",
+            "heading": "1191.5140979605508",
+            "pitch": "-2.950046205750929",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 141,
+        "location": {
+            "latitude": "40.6707327095",
+            "longitude": "-73.8796755721"
+        },
+        "pov": {
+            "latitude": "40.670703",
+            "longitude": "-73.87996599999997",
+            "heading": "1147.499520941724",
+            "pitch": "-10.559386452029466",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Look for it in the Good Shepherd Community Garden!"
+        }
+    },
+    {
+        "count" : 142,
+        "location": {
+            "latitude": "40.672659",
+            "longitude": "-73.885742"
+        },
+        "pov": {
+            "latitude": "40.672654",
+            "longitude": "-73.88565599999998",
+            "heading": "1344.868332219465",
+            "pitch": "-16.18725381221017",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Look for it in Gregory's Garden"
+        }
+    },
+    {
+        "count" : 143,
+        "location": {
+            "latitude": "40.66101",
+            "longitude": "-73.895627"
+        },
+        "pov": {
+            "latitude": "40.660808",
+            "longitude": "-73.89537899999999",
+            "heading": "1387.103536775499",
+            "pitch": "-13.621083139785663",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Look for it in Hands and Heart Garden"
+        }
+    },
+    {
+        "count" : 144,
+        "location": {
+            "latitude": "40.700784",
+            "longitude": "-73.995146"
+        },
+        "pov": {
+            "latitude": "40.700718",
+            "longitude": "-73.995196",
+            "heading": "1559.9278613962754",
+            "pitch": "-18.53316385164567",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Look for it in the Harry Chapin Playground"
+        }
+    },
+    {
+        "count" : 145,
+        "location": {
+            "latitude": "40.700784",
+            "longitude": "-73.995146"
+        },
+        "pov": {
+            "latitude": "40.700718",
+            "longitude": "-73.995196",
+            "heading": "1559.9278613962754",
+            "pitch": "-18.53316385164567",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Look for it in the Harry Chapin Playground"
+        }
+    },
+    {
+        "count" : 146,
+        "location": {
+            "latitude": "40.67269",
+            "longitude": "-73.984796"
+        },
+        "pov": {
+            "latitude": "40.672704",
+            "longitude": "-73.98484100000002",
+            "heading": "1796.1589470276651",
+            "pitch": "-12.037421850247796",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 147,
+        "location": {
+            "latitude": "40.673262",
+            "longitude": "-73.984332"
+        },
+        "pov": {
+            "latitude": "40.673267",
+            "longitude": "-73.98424699999998",
+            "heading": "2036.8594545657395",
+            "pitch": "-21.789910813837448",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 148,
+        "location": {
+            "latitude": "40.578225",
+            "longitude": "-73.994834"
+        },
+        "pov": {
+            "latitude": "40.577908",
+            "longitude": "-73.994922",
+            "heading": "2174.623757294701",
+            "pitch": "-4.554248906569502",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Care to take a walk through Kaiser Park?"
+        }
+    },
+    {
+        "count" : 149,
+        "location": {
+            "latitude": "40.603519",
+            "longitude": "-73.957375"
+        },
+        "pov": {
+            "latitude": "40.603452",
+            "longitude": "-73.95741399999997",
+            "heading": "2119.0990249309143",
+            "pitch": "-9.771420499979762",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Care to take a walk through Kelly Memorial Playground?"
+        }
+    },
+    {
+        "count" : 150,
+        "location": {
+            "latitude": "40.695719",
+            "longitude": "-73.990256"
+        },
+        "pov": {
+            "latitude": "40.695889",
+            "longitude": "-73.990103",
+            "heading": "2084.890071484868",
+            "pitch": "-6.583489354470042",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "But you can find it in Cadman Plaza"
+        }
+    },
+    {
+        "count" : 151,
+        "location": {
+            "latitude": "40.577672",
+            "longitude": "-73.944616"
+        },
+        "pov": {
+            "latitude": "40.577747",
+            "longitude": "-73.94444900000002",
+            "heading": "1970.2589590506698",
+            "pitch": "-24.128245970742203",
+            "zoom": "1"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 152,
+        "location": {
+            "latitude": "40.577211",
+            "longitude": "-73.946587"
+        },
+        "pov": {
+            "latitude": "40.577553",
+            "longitude": "-73.94624099999999",
+            "heading": "1993.5733458246384",
+            "pitch": "-10.738144608619912",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Look for it in the Manhattan Beach Park"
+        }
+    },
+    {
+        "count" : 153,
+        "location": {
+            "latitude": "40.604084999999998",
+            "longitude": "-73.930702999999994"
+        },
+        "pov": {
+            "latitude": "40.604235",
+            "longitude": "-73.93116",
+            "heading": "2285.72789451945",
+            "pitch": "0.7372709812652782",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find it in front of the Marine Park Salt Marsh Nature Center"
+        }
+    },
+    {
+        "count" : 154,
+        "location": {
+            "latitude": "40.721612",
+            "longitude": "-73.953668"
+        },
+        "pov": {
+            "latitude": "40.721647",
+            "longitude": "-73.95362399999999",
+            "heading": "2290.0234115104736",
+            "pitch": "-6.939602617803064",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 155,
+        "location": {
+            "latitude": "40.721535",
+            "longitude": "-73.954114"
+        },
+        "pov": {
+            "latitude": "40.721388",
+            "longitude": "-73.95390399999997",
+            "heading": "2114.3051168585757",
+            "pitch": "-7.425887262014945",
+            "zoom": "2.6500000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 156,
+        "location": {
+            "latitude": "40.720622",
+            "longitude": "-73.952488"
+        },
+        "pov": {
+            "latitude": "40.720756",
+            "longitude": "-73.952217",
+            "heading": "2077.9219385623414",
+            "pitch": "-3.6995498715534145",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 157,
+        "location": {
+            "latitude": "40.721653",
+            "longitude": "-73.950305"
+        },
+        "pov": {
+            "latitude": "40.722016",
+            "longitude": "-73.94971399999997",
+            "heading": "2016.7238989589366",
+            "pitch": "-0.8094756626571429",
+            "zoom": "2.9800000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 158,
+        "location": {
+            "latitude": "40.719973",
+            "longitude": "-73.952215"
+        },
+        "pov": {
+            "latitude": "40.719734",
+            "longitude": "-73.952564",
+            "heading": "2233.5085366753124",
+            "pitch": "-10.847339631197325",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Take a walk into McCarren Park"
+        }
+    },
+    {
+        "count" : 159,
+        "location": {
+            "latitude": "40.72173",
+            "longitude": "-73.953298"
+        },
+        "pov": {
+            "latitude": "40.721825",
+            "longitude": "-73.953428",
+            "heading": "2327.3917944539653",
+            "pitch": "-5.48255850744485",
+            "zoom": "2.6500000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 160,
+        "location": {
+            "latitude": "40.721075",
+            "longitude": "-73.955512"
+        },
+        "pov": {
+            "latitude": "40.72106",
+            "longitude": "-73.955508",
+            "heading": "2225.8866738562733",
+            "pitch": "-8.716755361884507",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 161,
+        "location": {
+            "latitude": "40.721933",
+            "longitude": "-73.955283"
+        },
+        "pov": {
+            "latitude": "40.721816",
+            "longitude": "-73.95558900000003",
+            "heading": "2304.6070687357583",
+            "pitch": "-9.468659637286795",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 162,
+        "location": {
+            "latitude": "40.724446",
+            "longitude": "-73.943326"
+        },
+        "pov": {
+            "latitude": "40.724316",
+            "longitude": "-73.944286",
+            "heading": "2236.6782808703388",
+            "pitch": "-12.960007519534898",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Take a walk into Msgr. McGolrick Park to find it"
+        }
+    },
+    {
+        "count" : 163,
+        "location": {
+            "latitude": "40.715086",
+            "longitude": "-73.960546"
+        },
+        "pov": {
+            "latitude": "40.715167",
+            "longitude": "-73.960586",
+            "heading": "2296.194749256327",
+            "pitch": "-1.4490825609180717",
+            "zoom": "1"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find this bin inside the Metropolitan Rec Center"
+        }
+    },
+    {
+        "count" : 164,
+        "location": {
+            "latitude": "40.692165000000003",
+            "longitude": "-73.985247000000001"
+        },
+        "pov": {
+            "latitude": "40.692197",
+            "longitude": "-73.985271",
+            "heading": "2236.9003486375354",
+            "pitch": "-12.007641299429725",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 165,
+        "location": {
+            "latitude": "40.67207",
+            "longitude": "-73.96598"
+        },
+        "pov": {
+            "latitude": "40.672161",
+            "longitude": "-73.964873",
+            "heading": "2359.7618610050254",
+            "pitch": "-4.865431131604586",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Why not take a walk into the Brooklyn Botanic Garden"
+        }
+    },
+    {
+        "count" : 166,
+        "location": {
+            "latitude": "40.693472999999997",
+            "longitude": "-73.979168000000001"
+        },
+        "pov": {
+            "latitude": "40.693493",
+            "longitude": "-73.97932500000002",
+            "heading": "2339.7946332544566",
+            "pitch": "-16.648575018084937",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 167,
+        "location": {
+            "latitude": "40.693221999999999",
+            "longitude": "-73.971886999999995"
+        },
+        "pov": {
+            "latitude": "40.69321",
+            "longitude": "-73.971868",
+            "heading": "2202.4349668443147",
+            "pitch": "-23.272187086855535",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 168,
+        "location": {
+            "latitude": "40.693126999999997",
+            "longitude": "-73.968789999999998"
+        },
+        "pov": {
+            "latitude": "40.693121",
+            "longitude": "-73.968807",
+            "heading": "2279.6689524325684",
+            "pitch": "-10.105441490749623",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 169,
+        "location": {
+            "latitude": "40.693455999999998",
+            "longitude": "-73.965907999999999"
+        },
+        "pov": {
+            "latitude": "40.693444",
+            "longitude": "-73.96598399999999",
+            "heading": "2715.1557655052493",
+            "pitch": "-16.21966191586645",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 170,
+        "location": {
+            "latitude": "40.720628",
+            "longitude": "-73.965524"
+        },
+        "pov": {
+            "latitude": "40.720749",
+            "longitude": "-73.965588",
+            "heading": "2786.3484007278494",
+            "pitch": "-13.340009111700851",
+            "zoom": "1"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 171,
+        "location": {
+            "latitude": "40.6659",
+            "longitude": "-73.887172"
+        },
+        "pov": {
+            "latitude": "40.666214",
+            "longitude": "-73.886782",
+            "heading": "2745.681270296914",
+            "pitch": "-11.852171833102272",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Look for it in the New Vision Garden"
+        }
+    },
+    {
+        "count" : 172,
+        "location": {
+            "latitude": "40.639285",
+            "longitude": "-74.031909"
+        },
+        "pov": {
+            "latitude": "40.638264",
+            "longitude": "-74.030918",
+            "heading": "2499.496688039257",
+            "pitch": "-6.812762736831256",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Why not take a walk into Owls Head Park"
+        }
+    },
+    {
+        "count" : 173,
+        "location": {
+            "latitude": "40.577492",
+            "longitude": "-73.946325"
+        },
+        "pov": {
+            "latitude": "40.577539",
+            "longitude": "-73.946426",
+            "heading": "2664.103963426582",
+            "pitch": "-7.076559289135046",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Why not take a walk into the Pat Perlato Playground"
+        }
+    },
+    {
+        "count" : 174,
+        "location": {
+            "latitude": "40.668796999999998",
+            "longitude": "-73.980143999999996"
+        },
+        "pov": {
+            "latitude": "40.668807",
+            "longitude": "-73.97999800000002",
+            "heading": "3017.101755456074",
+            "pitch": "-15.818785450655575",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 175,
+        "location": {
+            "latitude": "40.668796999999998",
+            "longitude": "-73.980143999999996"
+        },
+        "pov": {
+            "latitude": "40.668807",
+            "longitude": "-73.97999800000002",
+            "heading": "3017.101755456074",
+            "pitch": "-15.818785450655575",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 176,
+        "location": {
+            "latitude": "40.696389",
+            "longitude": "-73.99734"
+        },
+        "pov": {
+            "latitude": "40.696436",
+            "longitude": "-73.99728",
+            "heading": "2787.454239703344",
+            "pitch": "-7.033612029242365",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You'll find it in Pierrepont Park"
+        }
+    },
+    {
+        "count" : 177,
+        "location": {
+            "latitude": "40.664608",
+            "longitude": "-73.976666"
+        },
+        "pov": {
+            "latitude": "40.664569",
+            "longitude": "-73.976878",
+            "heading": "3010.80034619508",
+            "pitch": "-7.2940382299132205",
+            "zoom": "2.6500000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 178,
+        "location": {
+            "latitude": "40.66132",
+            "longitude": "-73.979593"
+        },
+        "pov": {
+            "latitude": "40.661083",
+            "longitude": "-73.97925",
+            "heading": "2827.0209340494034",
+            "pitch": "-6.884154004521829",
+            "zoom": "2.9800000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 179,
+        "location": {
+            "latitude": "40.660478",
+            "longitude": "-73.963187"
+        },
+        "pov": {
+            "latitude": "40.660442",
+            "longitude": "-73.96315099999998",
+            "heading": "2815.70565369517",
+            "pitch": "-6.696414092031234",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 180,
+        "location": {
+            "latitude": "40.655183",
+            "longitude": "-73.962214"
+        },
+        "pov": {
+            "latitude": "40.65516",
+            "longitude": "-73.96194100000002",
+            "heading": "2793.0382779562124",
+            "pitch": "-13.08977647994234",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 181,
+        "location": {
+            "latitude": "40.693761",
+            "longitude": "-73.948972"
+        },
+        "pov": {
+            "latitude": "40.693812",
+            "longitude": "-73.94890599999997",
+            "heading": "2748.640363337591",
+            "pitch": "-11.30567511781478",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can recycle in the Red Gate Garden"
+        }
+    },
+    {
+        "count" : 182,
+        "location": {
+            "latitude": "40.677265",
+            "longitude": "-74.008353"
+        },
+        "pov": {
+            "latitude": "40.67687",
+            "longitude": "-74.008014",
+            "heading": "2510.4090837732274",
+            "pitch": "-8.02666362768333",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Take a walk into Red Hook Park to find it"
+        }
+    },
+    {
+        "count" : 183,
+        "location": {
+            "latitude": "40.604374",
+            "longitude": "-73.930741"
+        },
+        "pov": {
+            "latitude": "40.604235",
+            "longitude": "-73.93115999999998",
+            "heading": "2284.9999700967223",
+            "pitch": "-0.5533649953562705",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "It's right inside the Marine Park Salt Marsh Nature Center"
+        }
+    },
+    {
+        "count" : 184,
+        "location": {
+            "latitude": "40.617506",
+            "longitude": "-74.040033"
+        },
+        "pov": {
+            "latitude": "40.617222",
+            "longitude": "-74.039989",
+            "heading": "1997.9165789413191",
+            "pitch": "-5.795996572828132",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find it at the Shore Road Playground"
+        }
+    },
+    {
+        "count" : 185,
+        "location": {
+            "latitude": "40.697746",
+            "longitude": "-73.976199"
+        },
+        "pov": {
+            "latitude": "40.698038",
+            "longitude": "-73.976412",
+            "heading": "1952.9428845959044",
+            "pitch": "-10.896877786881007",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find it at the Oxport Playground"
+        }
+    },
+    {
+        "count" : 186,
+        "location": {
+            "latitude": "40.701079",
+            "longitude": "-73.995307"
+        },
+        "pov": {
+            "latitude": "40.700717",
+            "longitude": "-73.995614",
+            "heading": "1841.748576132143",
+            "pitch": "-6.169483306816853",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 187,
+        "location": {
+            "latitude": "40.667491",
+            "longitude": "-73.89384"
+        },
+        "pov": {
+            "latitude": "40.667591",
+            "longitude": "-73.89373",
+            "heading": "2067.047650978538",
+            "pitch": "-11.454918418960583",
+            "zoom": "1"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "It's in the St. John Cantius Garden"
+        }
+    },
+    {
+        "count" : 188,
+        "location": {
+            "latitude": "40.673754",
+            "longitude": "-73.934855"
+        },
+        "pov": {
+            "latitude": "40.673485",
+            "longitude": "-73.934884",
+            "heading": "1789.5200571930775",
+            "pitch": "-2.91858507584364",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can find it inside the St. John's Rec Center"
+        }
+    },
+    {
+        "count" : 189,
+        "location": {
+            "latitude": "40.713316",
+            "longitude": "-73.938974"
+        },
+        "pov": {
+            "latitude": "40.713262",
+            "longitude": "-73.938837",
+            "heading": "1726.8843948860401",
+            "pitch": "-8.94921267501569",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Check in the Olive Street Garden"
+        }
+    },
+    {
+        "count" : 190,
+        "location": {
+            "latitude": "40.650143",
+            "longitude": "-73.884371999999999"
+        },
+        "pov": {
+            "latitude": "40.650134",
+            "longitude": "-73.884419",
+            "heading": "2207.7028240234054",
+            "pitch": "-11.029676034096902",
+            "zoom": "1"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 191,
+        "location": {
+            "latitude": "40.706315",
+            "longitude": "-73.948025"
+        },
+        "pov": {
+            "latitude": "40.706031",
+            "longitude": "-73.948073",
+            "heading": "1875.7312153835232",
+            "pitch": "-13.139288652140442",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Take a stroll into Sterberg Park"
+        }
+    },
+    {
+        "count" : 192,
+        "location": {
+            "latitude": "40.705616",
+            "longitude": "-73.947172"
+        },
+        "pov": {
+            "latitude": "40.705525",
+            "longitude": "-73.947083",
+            "heading": "2152.6973832951526",
+            "pitch": "-7.074246513304092",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Take a stroll into Sterberg Park"
+        }
+    },
+    {
+        "count" : 193,
+        "location": {
+            "latitude": "40.648468",
+            "longitude": "-74.006771"
+        },
+        "pov": {
+            "latitude": "40.648522",
+            "longitude": "-74.006764",
+            "heading": "2272.6384179906395",
+            "pitch": "-11.895522516726405",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 194,
+        "location": {
+            "latitude": "40.648468",
+            "longitude": "-74.006771"
+        },
+        "pov": {
+            "latitude": "40.648522",
+            "longitude": "-74.006764",
+            "heading": "2272.6384179906395",
+            "pitch": "-11.895522516726405",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 195,
+        "location": {
+            "latitude": "40.709648",
+            "longitude": "-73.950166"
+        },
+        "pov": {
+            "latitude": "40.709577",
+            "longitude": "-73.95020399999999",
+            "heading": "2174.6567529985346",
+            "pitch": "-8.159850419974404",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Look for it in the Ten Eyck Garden"
+        }
+    },
+    {
+        "count" : 196,
+        "location": {
+            "latitude": "40.666548",
+            "longitude": "-73.887691"
+        },
+        "pov": {
+            "latitude": "40.666606",
+            "longitude": "-73.887812",
+            "heading": "2261.518989131536",
+            "pitch": "-10.180007113759107",
+            "zoom": "2.6500000000000004"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Look for it in the Victory Garden"
+        }
+    },
+    {
+        "count" : 197,
+        "location": {
+            "latitude": "40.665324",
+            "longitude": "-73.886769"
+        },
+        "pov": {
+            "latitude": "40.6656",
+            "longitude": "-73.886624",
+            "heading": "2417.085082156825",
+            "pitch": "-10.871967003688056",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Look for it at the UCC Youth Farm"
+        }
+    },
+    {
+        "count" : 198,
+        "location": {
+            "latitude": "40.676766",
+            "longitude": "-73.965902"
+        },
+        "pov": {
+            "latitude": "40.676678",
+            "longitude": "-73.966124",
+            "heading": "2592.639481234495",
+            "pitch": "-12.632290899337349",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can recycly in at the Underhill Playground"
+        }
+    },
+    {
+        "count" : 199,
+        "location": {
+            "latitude": "40.688204",
+            "longitude": "-73.966559"
+        },
+        "pov": {
+            "latitude": "40.688163",
+            "longitude": "-73.966237",
+            "heading": "2471.694295153191",
+            "pitch": "-7.8925192357976",
+            "zoom": "2.6500000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 200,
+        "location": {
+            "latitude": "40.674329",
+            "longitude": "-73.877867"
+        },
+        "pov": {
+            "latitude": "40.67454",
+            "longitude": "-73.877862",
+            "heading": "2693.361144026769",
+            "pitch": "-15.131082472028858",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Check inside the Upon This Rock Community Garden"
+        }
+    },
+    {
+        "count" : 201,
+        "location": {
+            "latitude": "40.695220999999997",
+            "longitude": "-73.943263999999999"
+        },
+        "pov": {
+            "latitude": "40.695287",
+            "longitude": "-73.943388",
+            "heading": "2638.557218111094",
+            "pitch": "-10.372515254833704",
+            "zoom": "2.6500000000000004"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Check in the Vernon/Throop Avenue Block Association Garden"
+        }
+    },
+    {
+        "count" : 202,
+        "location": {
+            "latitude": "40.684658",
+            "longitude": "-73.925222"
+        },
+        "pov": {
+            "latitude": "40.684626",
+            "longitude": "-73.925343",
+            "heading": "2542.1636204166393",
+            "pitch": "-10.108222810895262",
+            "zoom": "1.9900000000000002"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Check in the Welcome Home Garden"
+        }
+    },
+    {
+        "count" : 203,
+        "location": {
+            "latitude": "40.723831",
+            "longitude": "-73.980677"
+        },
+        "pov": {
+            "latitude": "40.724",
+            "longitude": "-73.980533",
+            "heading": "2775.833046957996",
+            "pitch": "-9.594374141219511",
+            "zoom": "2.6500000000000004"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "Check in the 6BC Botanical Garden"
+        }
+    },
+    {
+        "count" : 204,
+        "location": {
+            "latitude": "40.712187",
+            "longitude": "-74.005701000000002"
+        },
+        "pov": {
+            "latitude": "40.712122",
+            "longitude": "-74.00573",
+            "heading": "2853.18290561937",
+            "pitch": "-7.951628827306246",
+            "zoom": "1"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 205,
+        "location": {
+            "latitude": "40.715826999999997",
+            "longitude": "-74.000488000000004"
+        },
+        "pov": {
+            "latitude": "40.715809",
+            "longitude": "-74.000409",
+            "heading": "2802.6863653629775",
+            "pitch": "2.6511389675796635",
+            "zoom": "1"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": "You can recycle inside the courthouse"
+        }
+    },
+    {
+        "count" : 206,
+        "location": {
+            "latitude": "40.715922999999997",
+            "longitude": "-74.001447999999996"
+        },
+        "pov": {
+            "latitude": "40.715925",
+            "longitude": "-74.001551",
+            "heading": "2972.9820257185593",
+            "pitch": "-7.912046076335381",
+            "zoom": "1.6600000000000001"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 207,
+        "location": {
+            "latitude": "40.710450000000002",
+            "longitude": "-74.003754999999998"
+        },
+        "pov": {
+            "latitude": "40.710491",
+            "longitude": "-74.003812",
+            "heading": "3000.9530249766244",
+            "pitch": "-6.384305084510508",
+            "zoom": "2.3200000000000003"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 208,
+        "location": {
+            "latitude": "40.716396000000003",
+            "longitude": "-74.001358999999994"
+        },
+        "pov": {
+            "latitude": "40.716317",
+            "longitude": "-74.00126",
+            "heading": "2808.2584354560995",
+            "pitch": "-0.8797287643360798",
+            "zoom": "1.33"
+        },
+        "misc": {
+            "visible": false,
+            "image": "",
+            "caption": ""
+        }
+    },
+    {
+        "count" : 209,
+        "location": {
+            "latitude": "40.718604999999997",
+            "longitude": "-73.993763000000001"
+        },
+        "pov": {
+            "latitude": "40.718562",
+            "longitude": "-73.993653",
+            "heading": "2805.676583073083",
+            "pitch": "-8.772076754750103",
+            "zoom": "2.9800000000000004"
+        },
+        "misc": {
+            "visible": true,
+            "image": "",
+            "caption": ""
+        }
+    }
+ ]
+}
